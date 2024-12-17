@@ -5,7 +5,7 @@ import DeleteUserModal from './DeleteUserModal';
 import LoadingSpinner, {ErrorAlert} from '../../common/LoadingSpinner';
 import ResetPasswordModal from "./ResetPasswordModal";
 
-const UsersTab = () => {
+const DatabaseTab = () => {
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -106,4 +106,4 @@ const UsersTab = () => {
     );
 };
 
-export default UsersTab;
+export default DatabaseTab;

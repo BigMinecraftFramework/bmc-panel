@@ -12,6 +12,7 @@ import NotFound from '../pages/NotFound';
 import PrivateRoute from './PrivateRoute';
 
 import SftpInterface from '../features/sftp/pages/SFTPInterface';
+import BackupsPage from "../pages/BackupsPage";
 // import SftpInterface from "../pages/sftpInterface";
 
 const AppRoutes = ({ instances, proxies }) => (
@@ -23,6 +24,7 @@ const AppRoutes = ({ instances, proxies }) => (
         <Route path="/admin" element={<PrivateRoute><Admin /></PrivateRoute>} />
         <Route path="/files/*" element={<PrivateRoute><SftpInterface /></PrivateRoute>} />
         <Route path="/databases" element={<PrivateRoute><DatabasesPage /></PrivateRoute>} />
+        <Route path="/backups" element={<PrivateRoute><BackupsPage /></PrivateRoute>} />
         <Route path="/deployments/:name/edit" element={<PrivateRoute><ConfigEditPage /></PrivateRoute>} />
         <Route path="/proxy/edit" element={<PrivateRoute><ConfigEditPage /></PrivateRoute>} />
         <Route path="/instance/:instanceName" element={<PrivateRoute><InstancePage instances={instances} proxies={proxies} /></PrivateRoute>} />

@@ -20,6 +20,7 @@ const NavigationBar = () => {
                         <NavLink to="/deployments">Deployments</NavLink>
                         <NavLink to="/files">Files</NavLink>
                         <NavLink to="/databases">Databases</NavLink>
+                        <NavLink to="/backups">Backups</NavLink>
                     </div>
                     <div className="flex items-center space-x-4">
                         <NavLink to="/admin" requireAdmin>Admin</NavLink>
